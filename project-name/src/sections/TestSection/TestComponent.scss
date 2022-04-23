@@ -1,0 +1,22 @@
+.section__inner {
+    padding: 25px;
+    background-color: #fffff8;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+}
+
+.section__title {
+    color: #4d1609;
+}
+
+.section__subtitle {
+    color: #7c4538;
+}
+
+img {
+    display: inline-block;
+    width: 300px;
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
