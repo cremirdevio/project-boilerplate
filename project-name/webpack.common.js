@@ -2,8 +2,6 @@
 const path = require('path');
 // html
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-// styles
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
     entry: {
@@ -31,7 +29,7 @@ module.exports = {
                 test: /\.(woff|woff2|eot|ttf|otf)$/i,
                 type: 'asset/resource',
                 generator: {
-                    filename: 'fonts/[hash][ext][query]',
+                    filename: 'fonts/[name][ext]',
                 },
             },
             {
@@ -51,6 +49,7 @@ module.exports = {
     ],
     resolve: {
         alias: {
+            Src: path.resolve(__dirname, 'src'),
             Components: path.resolve(__dirname, 'src/components'),
             Sections: path.resolve(__dirname, 'src/sections'),
         },

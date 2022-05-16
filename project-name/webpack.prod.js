@@ -11,7 +11,7 @@ const TerserPlugin = require('terser-webpack-plugin');
 
 module.exports = merge(common, {
     mode: 'production',
-    // devtool: 'source-map',
+    devtool: 'source-map',
     module: {
         rules: [
             {
@@ -83,11 +83,8 @@ module.exports = merge(common, {
         }),
         new FontminPlugin({
             autodetect: true,
-            glyphs: ['\uf0c8'],
             allowedFilesRegex: null,
             skippedFilesRegex: null,
-            textRegex: /\.(js|css|html)$/,
-            webpackCompilationHook: 'thisCompilation',
         }),
     ],
 });

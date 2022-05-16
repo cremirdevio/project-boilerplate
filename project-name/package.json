@@ -2,7 +2,7 @@
     "name": "webpack-build",
     "version": "1.0.0",
     "description": "My basic setup for web applications",
-    "main": "index.js",
+    "main": "src/index.js",
     "scripts": {
         "start": "webpack serve --open --config webpack.dev.js",
         "build": "webpack --config webpack.prod.js"
