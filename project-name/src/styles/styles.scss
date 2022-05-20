@@ -1,5 +1,8 @@
 $container-padding: 15px;
 
+*{
+    box-sizing: border-box;
+}
 // body section
 body{
     background-image: url('../img/body-background.jpg');

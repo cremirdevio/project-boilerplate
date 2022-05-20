@@ -13,10 +13,9 @@
     color: #7c4538;
 }
 
-img {
-    display: inline-block;
-    width: 300px;
-    max-width: 100%;
-    border-radius: 8px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+.images-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 1000px;
 }

@@ -1,5 +1,6 @@
 // devtools
 const path = require('path');
+const { webpack } = require('webpack');
 // html
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
@@ -22,7 +23,7 @@ module.exports = {
                 test: /\.(png|svg|jpg|jpeg|gif)$/i,
                 type: 'asset/resource',
                 generator: {
-                    filename: 'images/[hash][ext][query]',
+                    filename: 'images/[name][ext]',
                 },
             },
             {
